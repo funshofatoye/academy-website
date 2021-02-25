@@ -8,11 +8,54 @@ body {
     font-family: 'Karla', sans-serif;
 }
 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    /* padding: 15px; */
+    /* border: 1px solid red; */
+}
+
 .container {
     width: 1134px;
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: seashell;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #FF6A66;
+    color: #FFFFFF;
+}
+
+.btn-big {
+    padding: 12px 26px;
+    text-transform: uppercase;
+}
+
+.btn-block {
+    margin-top: 25px;
 }
 
 .top-nav {
@@ -104,16 +147,61 @@ body {
     line-height: 2;
 }
 
-.btn {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: seashell;
-    font-weight: 700;
-    font-size: 14px;
-    border-radius: 4px;
+.intro {
+    background-color: #FFBFA8;
+    height: 558px;
 }
 
-.btn-primary {
-    background-color: #FF6A66;
+.intro-text {
+    height: 558px;
+    padding: 100px 50px 30px 50px;
+}
+
+.intro-text h2 {
+    text-align: left;
+    font: normal normal bold 36px/38px Josefin Slab;
+    letter-spacing: 0px;
     color: #FFFFFF;
+}
+
+.intro-text h1 {
+    text-align: left;
+    font: normal normal bold 60px/38px Josefin Slab;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.intro-text p {
+    text-align: left;
+    font: normal normal medium 24px/38px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-top: 17px;
+}
+
+.slider-indicator {
+    list-style-type: none;
+    margin-top: 127px;
+}
+
+.slider-indicator li {
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, .29);
+    display: inline-block;
+}
+
+.slider-indicator li.active {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.banner-box {
+    height: 558px;
+}
+
+.banner-box img {
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 50%, 100% 99%, 0% 100%, 25% 50%, 0% 0%);
 }
